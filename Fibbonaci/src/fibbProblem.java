@@ -30,94 +30,81 @@ public class fibbProblem {
 
 
 public static void main(String args[]) {
-	
+	System.out.println("Recursive Fibs");
 	fibbProblem fibbonaci = new fibbProblem();
 	long startTime = System.nanoTime();
-	fibbonaci.fibbRec(10);
+	fibbonaci.fibbRec(1);
 	long finishTime = System.nanoTime();
+	long fibbRec1 = finishTime - startTime;
+	System.out.println("1: " + fibbRec1);
+	startTime = System.nanoTime();
+	fibbonaci.fibbRec(5);
+	finishTime = System.nanoTime();
+	long fibbRec5 = finishTime - startTime;
+	System.out.println("5: " + fibbRec5);
+	startTime = System.nanoTime();
+	fibbonaci.fibbRec(10);
+	finishTime = System.nanoTime();
 	long fibbRec10 = finishTime - startTime;
-	
+	System.out.println("10: " + fibbRec10);
 	startTime = System.nanoTime();
-	fibbonaci.fibbRec(50);
+	fibbonaci.fibbRec(15);
 	finishTime = System.nanoTime();
-	long fibbRec50 = finishTime - startTime;
-	
+	long fibbRec15 = finishTime - startTime;
+	System.out.println("15: " + fibbRec15);
 	startTime = System.nanoTime();
-	fibbonaci.fibbRec(100);
+	fibbonaci.fibbRec(20);
 	finishTime = System.nanoTime();
-	long fibbRec100 = finishTime - startTime;
-	
+	long fibbRec20 = finishTime - startTime;
+	System.out.println("20: " + fibbRec20);
 	startTime = System.nanoTime();
-	fibbonaci.fibbRec(500);
+	fibbonaci.fibbRec(25);
 	finishTime = System.nanoTime();
-	long fibbRec500 = finishTime - startTime;
-	
+	long fibbRec25 = finishTime - startTime;
+	System.out.println("25: " + fibbRec25);
 	startTime = System.nanoTime();
-	fibbonaci.fibbRec(1000);
+	fibbonaci.fibbRec(30);
 	finishTime = System.nanoTime();
-	long fibbRec1000 = finishTime - startTime;
+	long fibbRec30 = finishTime - startTime;
+	System.out.println("30: " + fibbRec30);
 	
+	System.out.println("\nIterative Fibs");
 	startTime = System.nanoTime();
-	fibbonaci.fibbRec(5000);
+	fibbonaci.fibbIter(1);
 	finishTime = System.nanoTime();
-	long fibbRec5000 = finishTime - startTime;
-	
+	long fibbIter1 = finishTime - startTime;
+	System.out.println("1: " + fibbIter1);
 	startTime = System.nanoTime();
-	fibbonaci.fibbRec(10000);
+	fibbonaci.fibbIter(5);
 	finishTime = System.nanoTime();
-	long fibbRec10000 = finishTime - startTime;
-	
-	
+	long fibbIter5 = finishTime - startTime;
+	System.out.println("5: " + fibbIter5);
 	startTime = System.nanoTime();
 	fibbonaci.fibbIter(10);
 	finishTime = System.nanoTime();
 	long fibbIter10 = finishTime - startTime;
-	
+	System.out.println("10: " + fibbIter10);
 	startTime = System.nanoTime();
-	fibbonaci.fibbIter(50);
+	fibbonaci.fibbIter(15);
 	finishTime = System.nanoTime();
-	long fibbIter50 = finishTime - startTime;
-	
+	long fibbIter15 = finishTime - startTime;
+	System.out.println("15: " + fibbIter15);
 	startTime = System.nanoTime();
-	fibbonaci.fibbIter(100);
+	fibbonaci.fibbIter(20);
 	finishTime = System.nanoTime();
-	long fibbIter100 = finishTime - startTime;
-	
+	long fibbIter20 = finishTime - startTime;
+	System.out.println("20: " + fibbIter20);
 	startTime = System.nanoTime();
-	fibbonaci.fibbIter(500);
+	fibbonaci.fibbIter(25);
 	finishTime = System.nanoTime();
-	long fibbIter500 = finishTime - startTime;
-	
+	long fibbIter25 = finishTime - startTime;
+	System.out.println("25: " + fibbIter25);
 	startTime = System.nanoTime();
-	fibbonaci.fibbIter(1000);
+	fibbonaci.fibbIter(30);
 	finishTime = System.nanoTime();
-	long fibbIter1000 = finishTime - startTime;
+	long fibbIter30 = finishTime - startTime;
+	System.out.println("30: " + fibbIter30);
 	
-	startTime = System.nanoTime();
-	fibbonaci.fibbIter(5000);
-	finishTime = System.nanoTime();
-	long fibbIter5000 = finishTime - startTime;
-	
-	startTime = System.nanoTime();
-	fibbonaci.fibbIter(10000);
-	finishTime = System.nanoTime();
-	long fibbIter10000 = finishTime - startTime;
-	
-	System.out.println(fibbRec10);
-	System.out.println(fibbRec50);
-	System.out.println(fibbRec100);
-	System.out.println(fibbRec500);
-	System.out.println(fibbRec1000);
-	System.out.println(fibbRec5000);
-	System.out.println(fibbRec10000);
-	System.out.println(fibbIter10);
-	System.out.println(fibbIter50);
-	System.out.println(fibbIter100);
-	System.out.println(fibbIter500);
-	System.out.println(fibbIter1000);
-	System.out.println(fibbIter5000);
-	System.out.println(fibbIter10000);
-	
-	
+
 }
 }
